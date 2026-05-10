@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>@thezezelab — links</title>
+<meta name="description" content="Links from @thezezelab — lifestyle, travel, gadget, AI, ลงทุน">
+<meta property="og:title" content="@thezezelab — links">
+<meta property="og:description" content="Tech, AI, gadgets, and travel notes 🇹🇭">
+<meta property="og:image" content="/profile.webp">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c2563a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' fill='%23faf2e7'%3EZ%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="/profile.webp">
+<link rel="preload" as="image" href="/profile.webp">
+<style>
+  :root {
+    --bg:        oklch(97% 0.018 70);
+    --surface:   oklch(99% 0.008 70);
+    --surface-2: oklch(95% 0.018 70);
+    --fg:        oklch(22% 0.02 50);
+    --muted:     oklch(50% 0.018 50);
+    --border:    oklch(90% 0.014 70);
+    --border-2:  oklch(85% 0.018 60);
+    --accent:    oklch(64% 0.13 28);
+    --accent-soft: oklch(94% 0.025 35);
+
+    --font-display: 'Tiempos Headline', 'Newsreader', 'Iowan Old Style', Charter, Georgia, serif;
+    --font-body:    'Söhne', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  html { background: var(--bg); }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    padding: 56px 20px 64px;
+    background-image:
+      radial-gradient(ellipse 80% 60% at 50% 0%, oklch(95% 0.04 50 / 0.55), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 100% 100%, oklch(94% 0.025 35 / 0.4), transparent 60%);
+    background-size: 140% 140%, 120% 120%;
+    background-position: 50% 0%, 100% 100%;
+    animation: bg-drift 22s ease-in-out infinite;
+  }
+
+  main {
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ───── Header ───── */
+  .head {
+    text-align: center;
+    margin-bottom: 44px;
+  }
+  .avatar {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    overflow: hidden;
+    isolation: isolate;
+    position: relative;
+    background: var(--surface-2);
+    box-shadow:
+      0 0 0 4px var(--bg),
+      0 0 0 5px var(--border),
+      0 12px 30px -16px oklch(45% 0.08 40 / 0.5);
+  }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .avatar::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    box-shadow: inset 0 1px 0 oklch(98% 0.02 70 / 0.5);
+    pointer-events: none;
+  }
+  .name {
+    font-family: var(--font-display);
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    margin: 0 0 8px;
+  }
+  .name em {
+    font-style: normal;
+    color: var(--accent);
+  }
+  .tagline {
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--muted);
+    margin: 0 auto;
+    max-width: 34ch;
+    letter-spacing: 0.005em;
+    text-wrap: balance;
+  }
+  .tagline .lede {
+    display: block;
+    color: var(--fg);
+    font-family: var(--font-display);
+    font-size: 17px;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+    font-style: italic;
+  }
+  .tagline .topics {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+  }
+
+  /* ───── Section labels ───── */
+  .label {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin: 0 0 14px;
+    padding-inline-start: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ───── Featured links ───── */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .link {
+    display: flex;
+    align-items: stretch;
+    gap: 14px;
+    padding: 18px 18px 18px 18px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--fg);
+    transition: transform .18s cubic-bezier(.2,.8,.3,1),
+                border-color .18s ease,
+                box-shadow .18s ease,
+                background .18s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 60%, var(--accent-soft));
+    opacity: 0;
+    transition: opacity .18s ease;
+    pointer-events: none;
+  }
+  .link:hover {
+    border-color: var(--border-2);
+    box-shadow: 0 10px 30px -16px oklch(40% 0.08 40 / 0.25);
+    transform: translateY(-1px);
+  }
+  .link:hover::before { opacity: 1; }
+  .link:active { transform: translateY(0); }
+
+  .link-thumb {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    align-self: center;
+    position: relative;
+    z-index: 1;
+  }
+  .thumb-cn {
+    background: linear-gradient(140deg, oklch(96% 0.04 60), oklch(90% 0.06 40));
+    color: oklch(38% 0.14 30);
+    font-size: 22px;
+  }
+  .thumb-fin {
+    background: linear-gradient(140deg, oklch(96% 0.04 150), oklch(90% 0.06 145));
+    color: oklch(36% 0.12 145);
+    font-size: 22px;
+  }
+  .link-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  .link-kicker {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+  .link-title {
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 1.3;
+    margin-bottom: 3px;
+    letter-spacing: -0.005em;
+  }
+  .link-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+  .link-arrow {
+    flex: 0 0 auto;
+    align-self: center;
+    color: var(--muted);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: transform .2s cubic-bezier(.2,.8,.3,1), color .18s ease, background .18s ease;
+    position: relative;
+    z-index: 1;
+  }
+  .link-arrow svg {
+    width: 14px;
+    height: 14px;
+    display: block;
+  }
+  .link:hover .link-arrow {
+    color: var(--accent);
+    transform: translateX(4px);
+  }
+
+  /* ───── Socials ───── */
+  .socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 48px;
+  }
+  .social {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1;
+    letter-spacing: 0.005em;
+    transition: border-color .15s ease, color .15s ease, transform .15s ease, background .15s ease;
+  }
+  .social:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-1px);
+  }
+  .social svg {
+    width: 13px;
+    height: 13px;
+    flex: 0 0 auto;
+  }
+
+  /* ───── Footer ───── */
+  .foot {
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .foot a {
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1px;
+    transition: color .15s ease, border-color .15s ease;
+  }
+  .foot a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+
+  /* ───── Animations ───── */
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-in-scale {
+    from { opacity: 0; transform: scale(.9); filter: blur(4px); }
+    to   { opacity: 1; transform: scale(1);  filter: blur(0); }
+  }
+  @keyframes bg-drift {
+    0%, 100% { background-position: 50% 0%,   100% 100%; }
+    50%      { background-position: 55% -4%,  92% 104%; }
+  }
+  @keyframes draw-line {
+    from { transform: scaleX(0); opacity: 0; }
+    to   { transform: scaleX(1); opacity: 1; }
+  }
+
+  /* Entrance — staggered reveal */
+  .avatar         { animation: fade-in-scale .8s cubic-bezier(.2,.8,.25,1) 0ms 1 normal backwards; }
+  .name           { animation: fade-up .65s cubic-bezier(.2,.8,.25,1) 140ms 1 normal backwards; }
+  .tagline .lede  { animation: fade-up .6s  cubic-bezier(.2,.8,.25,1) 240ms 1 normal backwards; }
+  .tagline .topics{ animation: fade-up .6s  cubic-bezier(.2,.8,.25,1) 320ms 1 normal backwards; }
+
+  .label          { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 420ms 1 normal backwards; }
+  .links .link:nth-child(1) { animation: fade-up .65s cubic-bezier(.2,.8,.25,1) 500ms 1 normal backwards; }
+  .links .link:nth-child(2) { animation: fade-up .65s cubic-bezier(.2,.8,.25,1) 580ms 1 normal backwards; }
+  .links + .label { animation-delay: 680ms; }
+
+  .socials .social:nth-child(1) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 760ms  1 normal backwards; }
+  .socials .social:nth-child(2) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 820ms  1 normal backwards; }
+  .socials .social:nth-child(3) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 880ms  1 normal backwards; }
+  .socials .social:nth-child(4) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 940ms  1 normal backwards; }
+  .socials .social:nth-child(5) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 1000ms 1 normal backwards; }
+  .foot           { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 1100ms 1 normal backwards; }
+
+  /* Label divider draws in after the label fades */
+  .label::after {
+    transform-origin: left center;
+    animation: draw-line .9s cubic-bezier(.4,0,.2,1) 600ms backwards;
+  }
+  .links + .label::after { animation-delay: 860ms; }
+
+  /* ───── Responsive ───── */
+  @media (max-width: 480px) {
+    body { padding: 40px 18px 56px; }
+    .head { margin-bottom: 36px; }
+    .name { font-size: 28px; }
+    .avatar { width: 84px; height: 84px; margin-bottom: 18px; }
+    .link { padding: 16px; gap: 12px; border-radius: 14px; }
+    .link-thumb { flex-basis: 46px; width: 46px; height: 46px; font-size: 19px; }
+    .link-title { font-size: 15.5px; }
+    .link-desc { font-size: 12.5px; }
+  }
+
+  @media (min-width: 760px) {
+    main { max-width: 520px; }
+    .name { font-size: 36px; }
+    body { padding-top: 80px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+      animation-delay: 0ms !important;
+      animation-iteration-count: 1 !important;
+    }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="head">
+    <div class="avatar">
+      <img src="/profile.webp" alt="@thezezelab" width="192" height="192" decoding="async" fetchpriority="high">
+    </div>
+    <h1 class="name">@thezezelab</h1>
+    <p class="tagline">
+      <span class="lede">A tech guy building things and breaking others.</span>
+      <span class="topics">Tech, AI, gadgets, and travel notes 🇹🇭</span>
+    </p>
+  </header>
+
+  <p class="label">What I'm sharing</p>
+
+  <section class="links">
+    <a class="link" href="https://wenfang.zeze.app/tools/" target="_blank" rel="noopener noreferrer">
+      <div class="link-thumb thumb-cn" aria-hidden="true">文</div>
+      <div class="link-body">
+        <div class="link-kicker">Tools · เรียนภาษาจีน</div>
+        <div class="link-title">Wenfang — เครื่องมือเรียนจีนของเราเอง</div>
+        <div class="link-desc">ค้นคำ ฝึกออกเสียง สร้าง flashcard — ทำไว้ใช้เองแล้วเปิดให้คนอื่นใช้ฟรี</div>
+      </div>
+      <span class="link-arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+
+    <a class="link" href="https://github.com/satasuk03/thai-personal-finance-planner/activity" target="_blank" rel="noopener noreferrer">
+      <div class="link-thumb thumb-fin" aria-hidden="true">฿</div>
+      <div class="link-body">
+        <div class="link-kicker">AI · ลงทุน / การเงิน</div>
+        <div class="link-title">Thai Personal Finance Planner</div>
+        <div class="link-desc">โปรเจกต์ AI ช่วยวางแผนการเงินสำหรับคนไทย — open source, อัปเดตเรื่อยๆ</div>
+      </div>
+      <span class="link-arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+  </section>
+
+  <p class="label">Find me</p>
+
+  <nav class="socials" aria-label="Social channels">
+    <a class="social" href="https://x.com/thezezelab" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      X
+    </a>
+    <a class="social" href="https://s.lemon8-app.com/s/GgjTMfhTcr" target="_blank" rel="noopener noreferrer" aria-label="Lemon8">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c2.5 2 4 4.5 4 7a4 4 0 11-8 0c0-2.5 1.5-5 4-7zM7 14c1 3 2.8 5 5 5s4-2 5-5"/></svg>
+      Lemon8
+    </a>
+    <a class="social" href="https://www.tiktok.com/@thezezelab" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005.8 20.1a6.34 6.34 0 0010.86-4.43V8.79a8.16 8.16 0 004.77 1.52V6.86a4.85 4.85 0 01-1.84-.17z"/></svg>
+      TikTok
+    </a>
+    <a class="social" href="https://www.instagram.com/zezethewanderer" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      Instagram
+    </a>
+    <a class="social" href="https://www.threads.com/@stszeze" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.18 2C6.66 2 3 5.74 3 11.93s3.66 9.92 9.18 9.92c4.34 0 6.86-2.42 7.55-5.7l-2.7-.66c-.42 2.06-1.86 3.46-4.85 3.46-3.6 0-5.83-2.18-6.27-6 1.34 1.97 3.5 3.04 6.41 3.04 3.78 0 6.15-1.83 6.15-4.66 0-2.79-2.34-4.62-5.85-4.62-2.94 0-5.13 1.04-6.42 2.9.83-3.4 3.13-5.35 6.85-5.35 2.93 0 5.06 1.32 5.69 3.55l2.71-.7C20.79 3.81 17.6 2 12.18 2zm-.27 6.86c2.04 0 3.41.88 3.41 2.4 0 1.6-1.45 2.5-3.59 2.5-2.84 0-4.55-1.27-4.79-3.49.93-.92 2.66-1.41 4.97-1.41z"/></svg>
+      Threads
+    </a>
+  </nav>
+
+  <footer class="foot">
+    <span>© 2026 · @thezezelab</span>
+  </footer>
+</main>
+</body>
+</html>

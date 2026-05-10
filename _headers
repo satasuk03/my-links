@@ -1,0 +1,11 @@
+/profile.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/profile-192.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate
+
+/
+  Cache-Control: public, max-age=300, must-revalidate
