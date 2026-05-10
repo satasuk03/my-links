@@ -214,6 +214,18 @@
     color: oklch(36% 0.12 145);
     font-size: 22px;
   }
+  .thumb-img {
+    background: oklch(98% 0.005 70);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    padding: 0;
+  }
+  .thumb-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
   .link-body {
     flex: 1;
     min-width: 0;
@@ -348,21 +360,22 @@
   .label          { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 420ms 1 normal backwards; }
   .links .link:nth-child(1) { animation: fade-up .65s cubic-bezier(.2,.8,.25,1) 500ms 1 normal backwards; }
   .links .link:nth-child(2) { animation: fade-up .65s cubic-bezier(.2,.8,.25,1) 580ms 1 normal backwards; }
-  .links + .label { animation-delay: 680ms; }
+  .links .link:nth-child(3) { animation: fade-up .65s cubic-bezier(.2,.8,.25,1) 660ms 1 normal backwards; }
+  .links + .label { animation-delay: 760ms; }
 
-  .socials .social:nth-child(1) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 760ms  1 normal backwards; }
-  .socials .social:nth-child(2) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 820ms  1 normal backwards; }
-  .socials .social:nth-child(3) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 880ms  1 normal backwards; }
-  .socials .social:nth-child(4) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 940ms  1 normal backwards; }
-  .socials .social:nth-child(5) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 1000ms 1 normal backwards; }
-  .foot           { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 1100ms 1 normal backwards; }
+  .socials .social:nth-child(1) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 840ms  1 normal backwards; }
+  .socials .social:nth-child(2) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 900ms  1 normal backwards; }
+  .socials .social:nth-child(3) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 960ms  1 normal backwards; }
+  .socials .social:nth-child(4) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 1020ms 1 normal backwards; }
+  .socials .social:nth-child(5) { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 1080ms 1 normal backwards; }
+  .foot           { animation: fade-up .55s cubic-bezier(.2,.8,.25,1) 1180ms 1 normal backwards; }
 
   /* Label divider draws in after the label fades */
   .label::after {
     transform-origin: left center;
     animation: draw-line .9s cubic-bezier(.4,0,.2,1) 600ms backwards;
   }
-  .links + .label::after { animation-delay: 860ms; }
+  .links + .label::after { animation-delay: 940ms; }
 
   /* ───── Responsive ───── */
   @media (max-width: 480px) {
@@ -424,8 +437,22 @@
       <div class="link-thumb thumb-fin" aria-hidden="true">฿</div>
       <div class="link-body">
         <div class="link-kicker">AI · ลงทุน / การเงิน</div>
-        <div class="link-title">Thai Personal Finance Planner</div>
+        <div class="link-title">วางแผนทางการเงิน ด้วย AI</div>
         <div class="link-desc">โปรเจกต์ AI ช่วยวางแผนการเงินสำหรับคนไทย — open source, อัปเดตเรื่อยๆ</div>
+      </div>
+      <span class="link-arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+    </a>
+
+    <a class="link" href="https://s.shopee.co.th/6AhkR82kgz" target="_blank" rel="noopener noreferrer sponsored">
+      <div class="link-thumb thumb-img" aria-hidden="true">
+        <img src="/shopee-philips-trimmer.webp" alt="" width="200" height="200" loading="lazy" decoding="async">
+      </div>
+      <div class="link-body">
+        <div class="link-kicker">Affiliate · Shopee</div>
+        <div class="link-title">Philips ปัตตาเลี่ยน 6-in-1 (MG3911/15)</div>
+        <div class="link-desc">ผม • หนวด • ขนจมูก จบในตัวเดียว — ของที่ใช้จริง</div>
       </div>
       <span class="link-arrow" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
